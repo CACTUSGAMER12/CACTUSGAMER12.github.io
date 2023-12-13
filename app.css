@@ -23,7 +23,7 @@ footer{
     margin: 0 auto;
 }
 header{
-background: #55d6aa;
+background: black;
 margin: 0 auto;
 }
 header::after{
@@ -46,12 +46,12 @@ nav li{
     position: relative;
 }
 nav a {
-    color: rgb(47, 45, 45);
+    color: rgb(230, 225, 225);
     text-decoration: none;
     text-transform: uppercase;
 }
 nav a:hover{
-    color: black;
+    color: white;
 }
 nav a::before{
     content: '';
@@ -60,7 +60,7 @@ nav a::before{
     width:0%;
     position: absolute;
     top: 0;
-    background-color: black;
+    background-color: white;
     transition: all ease-in-out 250ms;
 }
 nav a:hover::before{
