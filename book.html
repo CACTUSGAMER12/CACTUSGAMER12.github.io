@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title> Book a Lesson</Title>
+    <link rel = "stylesheet" href = "app.css"/>
+    <style> 
+    
+    
+    .form_container{
+        text-align: center;
+    }
+    input[name = "fname"]{
+        margin-top: 50px;
+
+    }
+    input[type= "text"],
+        input[type="email"],
+        textarea {
+            width: 40%;
+            padding: 15px; /* Adjust as needed */
+            margin-bottom: 15px; /* Adjust as needed */
+            border: none;
+            border-bottom: 2px solid black ;
+            background-color:rgb(14, 33, 77);
+            color: white;
+            resize: none;
+        }
+    input[type = "submit"]{
+        width: 40%;
+        padding: 15px;
+        cursor: pointer;
+    }
+    ::placeholder{
+        color: white;
+    }
+    </style>
+</head>
+<body>
+<header>
+        <div class = "header_container">
+       <h1 style = "float:left"> Charly Tennis</h1>
+       <nav> 
+        <ul>
+            <li><!--leads to the about us page-->
+            <a href = "index.html"> Home </a>
+             </li>
+            <li><!--leads to the about us page-->
+            <a href = "about.html"> About Us </a>
+            </li>
+            <li><!--leads to reserve a lesson-->
+            <a href = "book.html"> Book a Lesson</a>
+            </li>
+         </ul>
+       </nav>
+       </div>
+       </header>
+<h1 style="text-align:center; font-size: 50px;" >Book a lesson</h1>
+
+<div class = "form_container">
+<form action = "https://formsubmit.co/charlymatt@icloud.com" method = "post">
+<input type = "text" id = "fname" name = "fname" placeholder="First Name" required><br>
+
+<input type = "text" id = "lname" name = "lname" placeholder="Last Name" required><br>
+
+<input type = "email" id="email" name = "email" placeholder="Email"required><br>
+
+<textarea id="message" name="message" rows="4" placeholder="Type the time and date that would work for you and I get back to you" required></textarea><br>
+
+<input type = "submit" name ="submit" value = "Submit">
+</form>
+</div>
+
+</body>
+<footer>
+    <div class = "footer_container">
+    <address>
+    CEO Charly Rapin<br>
+    charlymatt@icloud.com<br>
+    Scottsdale Az<br>
+    USA
+</address>
+</div>
+</footer>
+<script src = "app.js"></script>
+
+</html

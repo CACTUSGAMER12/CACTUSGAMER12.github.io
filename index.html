@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title> Charly Tennis </Title>
+    <!--this links the apps.css to the index file -->
+    <link rel = "stylesheet" href = "app.css"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <style>
+        footer{position: relative;}
+    </style>
+
+</head>
+<body>
+    <!-- navigation bar controller-->
+<header>
+ <div class = "header_container">
+<h1 style = "float:left"> Charly Tennis</h1>
+<nav> 
+     <ul>
+        <li><!--leads to the about us page-->
+        <a href = "index.html"> Home </a>
+         </li>
+        <li><!--leads to the about us page-->
+        <a href = "about.html"> About Us </a>
+        </li>
+        <li><!--leads to reserve a lesson-->
+        <a href = "book.html"> Book a Lesson</a>
+        </li>
+     </ul>
+</nav>
+</div>
+</header>
+<p style="text-align:center; font-size:50px; font-weight: bold;">Book a lesson</p>
+<div class = "picture_container">
+
+    <div class = "swiper">
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><a href = "book.html"><img src = "IMG_3071.JPG" alt = "tennis picture"></a></div>
+        <div class="swiper-slide"><img src = "IMG_3077.JPG" alt = "tennis picture"></div>
+        
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+    
+    </div>
+</div>
+<!--this is where all of the bottom will be added and design in the main page-->
+
+<!--<button onClick = "alertButton()"> sign up</button>-->
+<!-- this will be at the bottom of every website page-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+
+
+</script>
+
+<footer>
+    <div class = "footer_container">
+    <address>
+    CEO Charly Rapin<br>
+    charlymatt@icloud.com<br>
+    Scottsdale Az<br>
+    USA
+</address>
+</div>
+
+</footer>
+</body>
+<!--This is where there will be the contact information, it will be at the bottom of the website-->
+
+
+<script src = "app.js"></script>
+</html>
