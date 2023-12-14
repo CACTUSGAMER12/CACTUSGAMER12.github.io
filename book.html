@@ -15,7 +15,7 @@
     }
     input[type= "text"],
         input[type="email"],
-        textarea {
+        textarea, input[type = "tel"]{
             width: 40%;
             padding: 15px; /* Adjust as needed */
             margin-bottom: 15px; /* Adjust as needed */
@@ -63,6 +63,10 @@
 <input type = "text" id = "lname" name = "lname" placeholder="Last Name" required><br>
 
 <input type = "email" id="email" name = "email" placeholder="Email"required><br>
+
+<div id="phone" class="contact-method phone-number">
+    <input type="tel" id="phoneInput" name = "phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="phone number: xxx-xxx-xxxx">
+  </div>
 
 <textarea id="message" name="message" rows="4" placeholder="Type the time and date that would work for you and I get back to you" required></textarea><br>
 

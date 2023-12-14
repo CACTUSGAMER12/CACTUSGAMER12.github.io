@@ -81,3 +81,7 @@ nav a:hover::before{
 .picture_container img{
     width: 100%;
 }
+.swiper .swiper-pagination-bullet-active{
+    background: white;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{color: white;}
