@@ -7,7 +7,7 @@
         .about_container{
            text-align:center; 
             color: white;
-            margin: 40px 200px;
+            margin: 40px 10%;
         }
         .about_picture_container{
             display: block;
@@ -16,10 +16,13 @@
             text-align:center;
             border-radius:50%;
             border: 5px solid;
-            width: 200px; /* Set the width to match the image */
-            height: 200px;
+            width: 50%;
+            max-width: 300px;
+            height: 50%; /* Added height to maintain circular shape */
+            max-height: 300px;/* Set the width to match the image */
             overflow: hidden;
             object-fit: contain;
+            margin-bottom: 130px;
         }
         .about_picture_container img{
             width: 100%; height: auto;
@@ -57,8 +60,6 @@ A one hour session cost 30 dollar per person.</p>
 <img src = "DSC_0018.JPG" alt = "picture of coach" width = "200" height= "200" >
 
 </div>
-
-</body>
 <footer>
     <div class = "footer_container">
     <address>
@@ -69,6 +70,7 @@ A one hour session cost 30 dollar per person.</p>
 </address>
 </div>
 </footer>
+</body>
 <script src = "app.js"></script>
 
 </html
