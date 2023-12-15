@@ -7,6 +7,8 @@ body, html{
     background-color:rgb(14, 33, 77);
     height: 100%;
     flex-direction: column;
+    min-height: 100vh;
+    display: flex;
 }
 footer{
     background-color:rgb(0, 0, 0);
@@ -14,20 +16,23 @@ footer{
     bottom: 0;
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: auto;
 }
 .footer_container{
     padding: 20px;
     text-align: center;
 }
 .header_container{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 header{
 background: black;
 margin: 0 auto;
+padding: 0px;
+width: 100%;
 }
+
 header::after{
     content: '';
     display: table;
@@ -45,6 +50,7 @@ nav li{
     display: inline-block;
     margin-left: 20px;
     padding-top: 32px;
+    margin-right: 20px;
     position: relative;
 }
 nav a {
@@ -70,7 +76,7 @@ nav a:hover::before{
 }
 .picture_container{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width:100%;
     height: auto;
     display: flex;
