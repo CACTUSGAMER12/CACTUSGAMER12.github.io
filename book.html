@@ -1,45 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
     <Title> Book a Lesson</Title>
     <link rel = "stylesheet" href = "app.css"/>
     <style> 
-    
-    
-    .form_container{
-        text-align: center;
-    }
-    input[name = "fname"]{
-        margin-top: 50px;
-
-    }
-    input[type= "text"],
-        input[type="email"],
-        textarea, input[type = "tel"]{
-            width: 40%;
-            padding: 15px; /* Adjust as needed */
-            margin-bottom: 15px; /* Adjust as needed */
-            border: none;
-            border-bottom: 2px solid black ;
-            background-color:rgb(14, 33, 77);
-            color: white;
-            resize: none;
-        }
-    input[type = "submit"]{
-        width: 40%;
-        padding: 15px;
-        cursor: pointer;
+    .calendly-inline-widget{
         margin-bottom: 20px;
+        min-width: 320px;
+        height: 100%;
+        overflow: hidden; 
     }
-    ::placeholder{
-        color: white;
+    .calender_container{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        margin-top: 10px;
     }
+
     </style>
 </head>
 <body>
 <header>
         <div class = "header_container">
-       <h1 style = "float:left;color:white"> Charly Tennis</h1>
+       <h1 style = "float:left;color:#F4F4DF"><div class = "logo"><img src = "tennislogo.jpg" alt = "tennis picture"></div></h1>
        <nav> 
         <ul>
             <li><!--leads to the about us page-->
@@ -55,10 +38,12 @@
        </nav>
        </div>
        </header>
-<h1 style="text-align:center; font-size: 50px; color:white;margin-left: 20px;" >Book a lesson</h1>
+<h1 style="text-align:center; font-size: 50px; color:#F4F4DF;margin-bottom: 0px;font-family: Barlow;" >Book a lesson</h1>
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/charlytennis/30min" style="min-width:320px;height:700px; margin-bottom: 20px;"></div>
+<div class = "calender_container">
+<div class="calendly-inline-widget" data-url="https://calendly.com/charlytennis/30min" style="min-width:320px;height:720px; margin-bottom: 20px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</div>
 <!-- Calendly inline widget end -->
 <!--
 <div class = "form_container">

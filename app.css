@@ -1,18 +1,30 @@
 h1{
     color : black;
+    border-radius:50%;
+    padding-left: 100px;
+}
+.logo img {
+    width: 100px; /* Adjust the width to your desired size */
+    height: auto; 
+    background-color: transparent; /* Remove the white background */
+    display: block; /* Remove any extra space below the image */
+    margin: 0; /* Remove any default margin */
+    border-radius: 50%;
 }
 body, html{
+    font-family: Barlow;
     margin: 0;
     padding: 0;
-    background-color:rgb(14, 33, 77);
+    background-color:#3F5F8F;
     height: 100%;
     flex-direction: column;
     min-height: 100vh;
     display: flex;
 }
 footer{
+    font-family: Barlow;
     background-color:rgb(0, 0, 0);
-    color: white;
+    color: #F4F4DF;
     bottom: 0;
     position: relative;
     width: 100%;
@@ -49,17 +61,18 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 20px;
-    padding-top: 32px;
+    padding-top: 60px;
     margin-right: 20px;
     position: relative;
 }
 nav a {
-    color: rgb(230, 225, 225);
+    color: #F4F4DF;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: Barlow;
 }
 nav a:hover{
-    color: white;
+    color: #F4F4DF;
 }
 nav a::before{
     content: '';
@@ -68,7 +81,7 @@ nav a::before{
     width:0%;
     position: absolute;
     top: 0;
-    background-color: white;
+    background-color:#E2DE8F;
     transition: all ease-in-out 250ms;
 }
 nav a:hover::before{
@@ -87,14 +100,41 @@ nav a:hover::before{
     height: auto;
 }
 .picture_container img{
-    width: 100%;
+    width: 80%;
 }
 .swiper .swiper-pagination-bullet-active{
-    background: white;
+    background: #F4F4DF;
 }
-.swiper .swiper-button-prev, .swiper .swiper-button-next{color: white;}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{color: #F4F4DF;}
 
-@media only screen and (max-width: 768px) {
+.menu-icon {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
     .header_container {
-        width: 90%; /* Adjusted for smaller screens */
+        width: 90%; /* Adjusted for smaller
+         */
+        nav ul {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+        }
+        nav li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .menu-icon {
+            display: block; /* Display on smaller screens */
+        }
     }}
