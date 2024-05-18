@@ -1,20 +1,13 @@
-function alertButton() {
-    alert("helloWorld");
-   }
-function toggleContactMethod() {
-    const preference = document.getElementById('communicationPreference').value;
-    const emailDiv = document.getElementById('email');
-    const phoneDiv = document.getElementById('phone'); 
-    if (preference === 'email') {
-      emailDiv.style.display = 'block';
-      phoneDiv.style.display = 'none';
-    } else if (preference === 'phone') {
-      emailDiv.style.display = 'none';
-      phoneDiv.style.display = 'block';
-    }
-  }
-  function toggleMenu() {
-    var nav = document.querySelector('nav ul');
-    nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'flex' : 'none';
-}
+const navEl = document.querySelector('.nav');
+const hamburgerEl = document.querySelector('.hamburger');
+hamburgerEl.addEventListener('click',() =>{
+navEl.classList.toggle('nav__open');
+hamburgerEl.classList.toggle('hamburger__open');
+});
 
+navEl.addEventListener('click', () => {
+  navEl.classList.remove('nav__open');
+  hamburgerEl.classList.remove('hamburger__open');
+
+
+});

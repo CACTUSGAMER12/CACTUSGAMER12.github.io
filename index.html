@@ -10,35 +10,32 @@
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 <style>
-
-      
  </style>
 
 </head>
 <body>
     <!-- navigation bar controller-->
-<header>
- <div class = "header_container">
-<h1 style = "float:left;color:#F4F4DF;margin-left: 20px;">  <div class = "logo"><img src = "tennislogo.jpg" alt = "tennis picture"></div></h1>
-<div class="menu-icon" onclick="toggleMenu()">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<nav> 
-     <ul>
-        <li><!--leads to the about us page-->
-        <a href = "index.html"> Home </a>
+<header class = "header">
+ <div class = "header__content">
+ <div class = "logo"><img src = "tennislogo.jpg" alt = "tennis picture"></div>
+<nav class = "nav"> 
+     <ul class = "nav__list">
+        <li class = "nav__item"><!--leads to the about us page-->
+        <a href = "index.html" class = "nav__link"> Home </a>
          </li>
         <li><!--leads to the about us page-->
-        <a href = "about.html"> About Us </a>
+        <a href = "about.html" class = "nav__link"> About Us </a>
         </li>
         <li><!--leads to reserve a lesson-->
-        <a href = "book.html"> Book a Lesson</a>
+        <a href = "book.html" class = "nav__link"> Book a Lesson</a>
         </li>
      </ul>
 </nav>
+<div class="hamburger">
+  <div class = "bar"></div>
+  <div class = "bar"></div>
+  <div class = "bar"></div>
+</div>
 </div>
 </header>
 <p style="text-align:center; font-size:50px; font-weight: bold;color: #F4F4DF; font-family: Barlow;">Book a lesson</p>
@@ -104,9 +101,6 @@ const swiper = new Swiper('.swiper', {
 </div>
 
 </footer>
-</body>
-<!--This is where there will be the contact information, it will be at the bottom of the website-->
-
-
 <script src = "app.js"></script>
+</body>
 </html>
