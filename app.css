@@ -4,11 +4,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-h1{
-    color : black;
-    border-radius:50%;
-    padding-left: 100px;
-}
 .logo img {
     width: 100px; /* Adjust the width to your desired size */
     height: auto; 
